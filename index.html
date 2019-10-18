@@ -16,22 +16,26 @@
         }
 
         /* 12) Set every h1 to be centered */
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
         }
 
         /* 13) Change the color of each link in the page */
         a {
-            color:prgb(128, 112, 216);
+            color: prgb(128, 112, 216);
         }
+
         /* 15) Set table to have rounded borders--> */
-        table,td, th {
+        table,
+        td,
+        th {
             border-radius: 5px;
             background-color: sandybrown;
             padding: 15px;
-            width:15px;
+            width: 15px;
             height: 20px;
-    
+
         }
 
         /*16)Add margin between every paragraph */
@@ -42,12 +46,13 @@
             margin-bottom: 3opx;
         }
 
-        .second{
+        .second {
             font-size: 15px;
             font-weight: bold;
         }
-        .hidden{
-            visibility:hidden;
+
+        .hidden {
+            visibility: hidden;
         }
 
 
@@ -56,12 +61,11 @@
             border: 1px solid green;
         }
 
-     /* 20) Add a dotted red border to each tr */
+        /* 20) Add a dotted red border to each tr */
 
         tr {
-           border: 2px dotted red; 
+            border: 2px dotted red;
         }
-    
     </style>
 </head>
 
@@ -78,7 +82,7 @@
     </ol>
     <!--  14) Create a class with a border -->
 
-    <table class ="border">
+    <table class="border">
         <!-- 4) Create a table with 5 columns and 4 rows -->
         <tr>
             <th>Name</th>
@@ -127,11 +131,11 @@
         <p> This paragraph describes the preparation of <strong>TEA</strong><br>
             This is simple process to make. Just <em>Boil the Water</em> and add <em>Tea Bags</em>.<br>
             <i>Optional</i> to add Milk and Sugar!! </p>
-            <!--  18) Create a class to hide a content -->
-            <p class="hidden">
+        <!--  18) Create a class to hide a content -->
+        <p class="hidden">
             Tea is very usefull for the health. There are many kinds of Tea making. Enjoy what suits you well </p>
-<!--  17) Create a class which change font size and boldness -->
-        <ul class ="second">
+        <!--  17) Create a class which change font size and boldness -->
+        <ul class="second">
             Method
             <li>Hot Water</li>
             <li>Tea bags</li>
@@ -146,11 +150,64 @@
                     <li>Free fat</li>
                 </ul>
         </ul>
+        <button onclick="myFunction()">Fruits</button>
+        <p id=#third></p>
     </section>
     <!-- 10) Create a footer with some information about the page creator-->
     <footer>
         <p>The page is created by <strong>Neha</strong> on <i></i>18th October 2019</i></p>
     </footer>
+    <script>
+        /*21) Given variable X = "John" and Y = "Doe", write on the console log "John <> Doe"*/
+
+        var x = "John"; var y = "Deo";
+        if (x == "John" && y == "Deo") {
+            console.log("John <> Doe");
+        } else {
+            console.log("false");
+        }
+
+        /* 22) Create an object with properties such Name, Surname, Email */
+        var person = {
+            firstName: "neha",
+            lastName: " Venkat",
+            emailId: "nv@gmail.com",
+            country: "Denamrk"
+
+        }
+
+        /* 23) Delete Email from the previously created object*/
+
+        delete person.emailId;
+
+        /*24) Create an array with 10 strings in it*/
+
+        var fruits = ["apple", "banana", "custardApple", "grapes", "honeymelon", "kiwi", "mango", "pear", "strawberry", "watermelon"]
+
+        /* 25) Print in the console every string in the previous array*/
+
+        function myFunction() {
+            var fruits = ["apple", "banana", "custardApple", "grapes", "honeymelon", "kiwi", "mango", "pear", "strawberry", "watermelon"]
+            var x = fruits.toString();
+            document.querySelectorall("#third").innerHTML = x;
+        }
+/*26) Create an array with 100 random numbers in it*/
+        var myArray = [];
+        var arrayMax = 40;
+        var limit = arrayMax + 1;
+        for (var i = 0; i < arrayMax; i++) {
+            myArray.push(Math.floor(Math.random() * limit));
+        }
+
+    </script>
 </body>
 
 </html>
+
+
+
+26) Create an array with 100 random numbers in it
+27) Wrote a function to get the MAX and the MIN from the previously created array
+28) Create an array of arrays, in which every array has 10 random numbers
+29) Create a function that gets 2 arrays and returns the longest one
+30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
