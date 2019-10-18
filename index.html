@@ -1,70 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> The Document of Today</title>  <!--1) Create a title for the page -->
-    
+    <title> The Document of Today</title>
+    <!--1) Create a title for the page -->
+
     <style>
-        table, td,th{
+        table,
+        td,
+        th {
             border: 1px solid black;
         }
     </style>
 </head>
+
 <body>
-<h1>This is the Heading of the Page</h1> <!-- 2) Create a heading -->
-<ol>                                     <!-- 3) Create an ordered list -->
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JS</li>
-    <li>DOM</li>
-    <li>EXTRA</li>
-    
-</ol>
-<table> <!-- 4) Create a table with 5 columns and 4 rows -->
-<tr>
-    <th>Name</th>
-    <th>flower image</th>
-    <th>Email</th>
-    <th>Language</th>
-</tr>
-<tr>  <!--   5) Add an image for each second cell of the first row -->
-        <td>Neha</td>
-        <td><img src="https://imgur.com/6Gjv5T2.png" alt="flower1" style="width:100%"></td>
-        <td>nv@gmail.com</td>
-        <td>Danish</td>
-</tr>
-<tr>
-        <td>Divya</td>
-        <td><img src="https://imgur.com/DLIILvX.png" alt="flower2" style="width:100%"></td>
-        <td>da@gmail.com</td>
-        <td>English</td>
-</tr>
-<tr>
-        <td>Ramya</td>
-        <td><img src="https://imgur.com/33NqMp1.png" alt="flower3" style="width:100%"></td>
-        <td>rs@gmail.com</td>
-        <td rowspan='2'>Telugu</td>  <!-- 6) Merge together 2 table cells-->
-</tr>
-<tr>
-        <td>Chaitu</td>
-        <td><img src="https://imgur.com/dycUnLM.png" alt="flower4" style="width:100%"></td>
-        <td>ca@gmail.com</td>
-        
-</tr>
-</table>
-    
+    <h1>This is the Heading of the Page</h1> <!-- 2) Create a heading -->
+    <ol>
+        <!-- 3) Create an ordered list -->
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>DOM</li>
+        <li>EXTRA</li>
+
+    </ol>
+    <table>
+        <!-- 4) Create a table with 5 columns and 4 rows -->
+        <tr>
+            <th>Name</th>
+            <th>flower image</th>
+            <th>Email</th>
+            <th>Language</th>
+        </tr>
+        <tr>
+            <!--   5) Add an image for each second cell of the first row -->
+            <!-- 7) Add a link for every image-->
+            <td>Neha</td>
+            <td><img src="https://imgur.com/6Gjv5T2.png" alt="flower1" style="width:100%"></td>
+            <a href ="https://www.pexels.com/photo/red-roses-valentine-s-day-flowers-47258/"></a>
+            <td>nv@gmail.com</td>
+            <td>Danish</td>
+        </tr>
+        <tr>
+            <td>Divya</td>
+            <td><img src="https://imgur.com/DLIILvX.png" alt="flower2" style="width:100%"></td>
+            <td>da@gmail.com</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Ramya</td>
+            <td><img src="https://imgur.com/33NqMp1.png" alt="flower3" style="width:100%"></td>
+            <td>rs@gmail.com</td>
+            <td rowspan='2'>Telugu</td> <!-- 6) Merge together 2 table cells-->
+        </tr>
+        <tr>
+            <td>Chaitu</td>
+            <td><img src="https://imgur.com/dycUnLM.png" alt="flower4" style="width:100%"></td>
+            <td>ca@gmail.com</td>
+
+        </tr>
+    </table>
+
+    <hr> <!-- 8) Divide the page using a horizontal line -->
+
+    <!-- 9) Create a container with a nested paragraph and a nested unordered list-->
+    <section><h2>Preparation of TEA</h2>
+    <p>This paragraph describes the preparation of <strong>TEA</strong><br>
+        This is simple process to make. Just <em>Boil the Water</em> and add <em>Tea Bags</em>.<br>
+        <i>Optional</i> to add Milk and Sugar!! </p>
+
+    <ul>
+        Method
+        <li>Hot Water</li>
+        <li>Tea bags</li>
+        <li>Sugar
+            <ul>
+                <li>Brown</li>
+                <li>White</li>
+            </ul>
+        <li>Milk
+            <ul>
+                <li>Low fat</li>
+                <li>Free fat</li>
+            </ul>
+    </ul>
+</section>
+    <!-- 10) Create a footer with some information about the page creator-->
+    <footer>
+        <p>The page is created by <strong>Neha</strong> on <i></i>18th October 2019</i></p>
+    </footer>
 </body>
+
 </html>
 
 
-
-
-
-
-
 7) Add a link for every image
-8) Divide the page using a horizontal line
-9) Create a container with a nested paragraph and a nested unordered list
-10) Create a footer with some information about the page creator 
