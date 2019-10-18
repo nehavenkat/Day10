@@ -7,17 +7,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> The Document of Today</title>
     <!--1) Create a title for the page -->
-
+    <!---->
     <style>
-        table,
-        td,
-        th {
-            border: 1px solid black;
+        /*  11) Give a maximum width to the body and center it in the page */
+        #first {
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* 12) Set every h1 to be centered */
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        /* 13) Change the color of each link in the page */
+        a {
+            color: palevioletred;
+        }
+        table,td, th {
+            border: 1px rounded black
+        }
+
+        /*19) Add a green border to each td */
+        td {
+            border-color: green;
+        }
+        /* 20) Add a dotted red border to each tr */
+        tr {
+            border-color: red;
         }
     </style>
 </head>
 
-<body>
+<body id="first">
     <h1>This is the Heading of the Page</h1> <!-- 2) Create a heading -->
     <ol>
         <!-- 3) Create an ordered list -->
@@ -40,26 +63,30 @@
             <!--   5) Add an image for each second cell of the first row -->
             <!-- 7) Add a link for every image-->
             <td>Neha</td>
-            <td><img src="https://imgur.com/6Gjv5T2.png" alt="flower1" style="width:100%"></td>
-            <a href ="https://www.pexels.com/photo/red-roses-valentine-s-day-flowers-47258/"></a>
+            <td> <a href="https://www.availableideas.com/30-beautiful-flower-images-free-download/">
+                    <img src="https://imgur.com/6Gjv5T2.png" alt="flower1" style="width:100%"></td></a>
+
             <td>nv@gmail.com</td>
             <td>Danish</td>
         </tr>
         <tr>
             <td>Divya</td>
-            <td><img src="https://imgur.com/DLIILvX.png" alt="flower2" style="width:100%"></td>
+            <td><a href="https://unsplash.com/s/photos/pink-flower">
+                    <img src="https://imgur.com/DLIILvX.png" alt="flower2" style="width:100%"></td></a>
             <td>da@gmail.com</td>
             <td>English</td>
         </tr>
         <tr>
             <td>Ramya</td>
-            <td><img src="https://imgur.com/33NqMp1.png" alt="flower3" style="width:100%"></td>
+            <td><a href="https://unsplash.com/s/photos/red-rose">
+                    <img src="https://imgur.com/33NqMp1.png" alt="flower3" style="width:100%"></td></a>
             <td>rs@gmail.com</td>
             <td rowspan='2'>Telugu</td> <!-- 6) Merge together 2 table cells-->
         </tr>
         <tr>
             <td>Chaitu</td>
-            <td><img src="https://imgur.com/dycUnLM.png" alt="flower4" style="width:100%"></td>
+            <td><a href="http://amolife.com/en/tag/royalty-free-images/">
+                    <img src="https://imgur.com/dycUnLM.png" alt="flower4" style="width:100%"></td></a>
             <td>ca@gmail.com</td>
 
         </tr>
@@ -68,27 +95,28 @@
     <hr> <!-- 8) Divide the page using a horizontal line -->
 
     <!-- 9) Create a container with a nested paragraph and a nested unordered list-->
-    <section><h2>Preparation of TEA</h2>
-    <p>This paragraph describes the preparation of <strong>TEA</strong><br>
-        This is simple process to make. Just <em>Boil the Water</em> and add <em>Tea Bags</em>.<br>
-        <i>Optional</i> to add Milk and Sugar!! </p>
+    <section>
+        <h2>Preparation of TEA</h2>
+        <p>This paragraph describes the preparation of <strong>TEA</strong><br>
+            This is simple process to make. Just <em>Boil the Water</em> and add <em>Tea Bags</em>.<br>
+            <i>Optional</i> to add Milk and Sugar!! </p>
 
-    <ul>
-        Method
-        <li>Hot Water</li>
-        <li>Tea bags</li>
-        <li>Sugar
-            <ul>
-                <li>Brown</li>
-                <li>White</li>
-            </ul>
-        <li>Milk
-            <ul>
-                <li>Low fat</li>
-                <li>Free fat</li>
-            </ul>
-    </ul>
-</section>
+        <ul>
+            Method
+            <li>Hot Water</li>
+            <li>Tea bags</li>
+            <li>Sugar
+                <ul>
+                    <li>Brown</li>
+                    <li>White</li>
+                </ul>
+            <li>Milk
+                <ul>
+                    <li>Low fat</li>
+                    <li>Free fat</li>
+                </ul>
+        </ul>
+    </section>
     <!-- 10) Create a footer with some information about the page creator-->
     <footer>
         <p>The page is created by <strong>Neha</strong> on <i></i>18th October 2019</i></p>
@@ -98,4 +126,10 @@
 </html>
 
 
-7) Add a link for every image
+
+
+14) Create a class with a border
+15) Set table to have rounded borders
+16) Add margin between every paragraph
+17) Create a class which change font size and boldness
+18) Create a class to hide a content
