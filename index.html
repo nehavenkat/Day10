@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> The Document of Today</title>  <!--1) Create a title for the page -->
+    
+    <style>
+        table, td,th{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
 <h1>This is the Heading of the Page</h1> <!-- 2) Create a heading -->
@@ -13,17 +19,17 @@
     <li>CSS</li>
     <li>JS</li>
     <li>DOM</li>
-    <LI>EXTRA</LI>
+    <li>EXTRA</li>
+    
 </ol>
 <table> <!-- 4) Create a table with 5 columns and 4 rows -->
 <tr>
-    <td>Name</td>
-    <td>flower image</td>
-    
-    <td>Address</td>
-    <td>Language</td>
+    <th>Name</th>
+    <th>flower image</th>
+    <th>Email</th>
+    <th>Language</th>
 </tr>
-<tr>
+<tr>  <!--   5) Add an image for each second cell of the first row -->
         <td>Neha</td>
         <td><img src="https://imgur.com/6Gjv5T2.png" alt="flower1" style="width:100%"></td>
         <td>nv@gmail.com</td>
@@ -39,13 +45,13 @@
         <td>Ramya</td>
         <td><img src="https://imgur.com/33NqMp1.png" alt="flower3" style="width:100%"></td>
         <td>rs@gmail.com</td>
-        <td>Telugu</td>
+        <td rowspan='2'>Telugu</td>  <!-- 6) Merge together 2 table cells-->
 </tr>
 <tr>
         <td>Chaitu</td>
         <td><img src="https://imgur.com/dycUnLM.png" alt="flower4" style="width:100%"></td>
         <td>ca@gmail.com</td>
-        <td>Hindi</td>
+        
 </tr>
 </table>
     
@@ -57,7 +63,7 @@
 
 
 
-6) Merge together 2 table cells
+
 7) Add a link for every image
 8) Divide the page using a horizontal line
 9) Create a container with a nested paragraph and a nested unordered list
