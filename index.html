@@ -150,8 +150,9 @@
                     <li>Free fat</li>
                 </ul>
         </ul>
-        <button onclick="myFunction()">Fruits</button>
-        <p id=#third></p>
+        <button onclick="logarray()">Fruits</button>
+        <p id="third"></p>
+        <p id="four"></p>
     </section>
     <!-- 10) Create a footer with some information about the page creator-->
     <footer>
@@ -184,20 +185,30 @@
 
         var fruits = ["apple", "banana", "custardApple", "grapes", "honeymelon", "kiwi", "mango", "pear", "strawberry", "watermelon"]
 
-        /* 25) Print in the console every string in the previous array*/
+        /* 25) Print in the console every string in the previous array
 
         function myFunction() {
             var fruits = ["apple", "banana", "custardApple", "grapes", "honeymelon", "kiwi", "mango", "pear", "strawberry", "watermelon"]
-            var x = fruits.toString();
-            document.querySelectorall("#third").innerHTML = x;
+            var myfruits = fruits.toString();
+            document.querySelectorall("#third").innerHTML = myfruits;
+        }  */
+
+        function logarray(){
+            for ( var i = 0 ; i < fruits.length ; i++){
+                console.log("the fruits are "+ fruits[i]);
+            }
+
+
+
         }
-/*26) Create an array with 100 random numbers in it*/
+        /*26) Create an array with 100 random numbers in it*/
         var myArray = [];
-        var arrayMax = 40;
+        var arrayMax = 100;
         var limit = arrayMax + 1;
         for (var i = 0; i < arrayMax; i++) {
             myArray.push(Math.floor(Math.random() * limit));
         }
+        /* 31) Get element with ID "container" from the page */
 
     </script>
 </body>
@@ -206,8 +217,17 @@
 
 
 
-26) Create an array with 100 random numbers in it
-27) Wrote a function to get the MAX and the MIN from the previously created array
+<!--27) Write a function to get the MAX and the MIN from the previously created array
 28) Create an array of arrays, in which every array has 10 random numbers
 29) Create a function that gets 2 arrays and returns the longest one
-30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values 
+31) Get element with ID "container" from the page
+32) Get every "td" from the page
+33) Create a cycle that prints the text inside every td of the page
+34) Write a function to change the heading of the page
+35) Write a function to add an extra row to the table
+36) Write a function to add the class "test" to reach row in the table
+37) Write a function to add a red background to every link in the page
+38) Console log "Page loaded" when the page is correctly loaded
+39) Write a function to add new items to a UL
+40) Write a function to empty a list  -->
